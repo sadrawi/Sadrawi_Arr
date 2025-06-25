@@ -29,7 +29,7 @@ if uploaded_file:
         caption="Uploaded Image", 
         use_container_width=True)
 
-    if st.button("Run Segmentation"):
+    if st.button("Run Detection"):
         # Convert to numpy array
         img_np = np.array(image)
 
