@@ -1,5 +1,5 @@
+ultralytics==8.3.158
 streamlit
-torch
-opencv-python
 Pillow
+opencv-python
 numpy
