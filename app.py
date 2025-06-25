@@ -8,7 +8,7 @@ import os
 import requests
 # Load YOLOv8 segmentation model
 
-model_path = "best_seg_LungNodule.pt"
+model_path = "best_arrhythmia.pt"
 
 if not os.path.exists(model_path):
     url = "https://huggingface.co/Muammar16/yolo_arrhythmia/resolve/main/best_arrhythmia.pt"
