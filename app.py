@@ -4,10 +4,18 @@ import numpy as np
 import cv2
 from ultralytics import YOLO
 import tempfile
-
+import os
+import requests
 # Load YOLOv8 segmentation model
 
-model = YOLO('best_arrhythmia.pt')
+model_path = "best_seg_LungNodule.pt"
+
+if not os.path.exists(model_path):
+    url = "https://huggingface.co/Muammar16/yolo_arrhythmia/blob/main/best_arrhythmia.pt"
+    with open(model_path, 'wb') as f:
+        f.write(requests.get(url).content)
+
+model = YOLO(model_path)
 
 # Streamlit UI
 st.title("Computer based Arrhythmia detection")
