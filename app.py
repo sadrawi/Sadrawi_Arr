@@ -11,7 +11,7 @@ import requests
 model_path = "best_arrhythmia.pt"
 
 if not os.path.exists(model_path):
-    url = "https://huggingface.co/Muammar16/yolo_arrhythmia/resolve/main/best_arrhythmia.pt"
+    url = "https://huggingface.co/Sadrawi/ModelARR/resolve/main/best_arrhythmia.pt"
     with open(model_path, 'wb') as f:
         f.write(requests.get(url).content)
 
