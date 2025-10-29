@@ -18,7 +18,7 @@ if not os.path.exists(model_path):
 model = YOLO(model_path)
 
 # Streamlit UI
-st.title("Computer01 ")
+st.title("Computer02 ")
 
 uploaded_file = st.file_uploader("Upload an Image", 
     type=['png', 'jpg', 'jpeg'])
