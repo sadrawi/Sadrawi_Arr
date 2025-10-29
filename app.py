@@ -8,6 +8,20 @@ import os
 import requests
 # Load YOLOv8 segmentation model
 
+
+
+col1, col2, col3 = st.columns([1, 2, 1])
+with col2:
+    st.image("i3LUniversity_H.png", 
+             use_container_width=True)
+
+
+st.markdown(
+    "<h1 style='text-align: center;'>AI-based Lung Nodule Segmentation</h1>",
+    unsafe_allow_html=True
+)
+
+
 model_path = "best_arrhythmia.pt"
 
 if not os.path.exists(model_path):
