@@ -32,7 +32,7 @@ if not os.path.exists(model_path):
 model = YOLO(model_path)
 
 # Streamlit UI
-st.title("Computer based Arrhythmia detection")
+st.title("Computer based")
 
 uploaded_file = st.file_uploader("Upload an Image", 
     type=['png', 'jpg', 'jpeg'])
