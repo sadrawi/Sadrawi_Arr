@@ -8,7 +8,6 @@ import os
 import requests
 # Load YOLOv8 segmentation model
 
-
 model_path = "best_arrhythmia.pt"
 
 if not os.path.exists(model_path):
@@ -18,7 +17,8 @@ if not os.path.exists(model_path):
 
 model = YOLO(model_path)
 
-
+# Streamlit UI
+st.title("Computer based Arrhythmia detection")
 
 uploaded_file = st.file_uploader("Upload an Image", 
     type=['png', 'jpg', 'jpeg'])
