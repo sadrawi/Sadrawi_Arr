@@ -11,10 +11,10 @@ import requests
 # Streamlit UI
 st.title("Computer based")
 
-col1, col2, col3 = st.columns([1, 2, 1])
-with col2:
-    st.image("i3LUniversity_H.png", 
-             use_container_width=True)
+# col1, col2, col3 = st.columns([1, 2, 1])
+# with col2:
+#     st.image("i3LUniversity_H.png", 
+#              use_container_width=True)
 
 
 # st.markdown(
